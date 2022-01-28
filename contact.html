@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>                             <!--header create garyau-->
+   <h1>Welcome</h1>
+   <p>Computer basics and Programming</p>
+</header>                               
+<nav>                                 <!--navigation bar create garyau--> 
+  <a href="what is programming.html">HOME </a>
+  <a href="gallery.html"> GALLERY </a>
+  <a href="contact.html">CONTACT</a>
+  <a href="table.html">TABLE</a>
+</nav>
+<div class="container">
+ <div style="text-align:center;">
+     <h2>Contact me</h2>
+      <p> For more information, you can contact me</p>
+ </div>
+  <form action="index.php">            <!--form open-->           <!-- action sends input data to php file-->
+    <label for="fname">first name</label>
+    <input type="text" name="firstname" id="fname">  <!-- for and id ekchoti use garnuparxa-->
+    <label for="lname">last name</label>
+    <input type="text" name="lname" id="lname">
+    <label for="country">Country</label>  
+    <select id="country">
+         <option>Nepal</option>
+         <option>india</option>
+         <option>china</option>
+    </select>
+    <label for="message">Message:</label>
+    <textarea id="message"></textarea>
+    <input type="submit" value="send message"><!--yesma chai value le real value element ko hoina display ko kaam garxa-->
+  </form>                                          <!--(identification ma help garxa particular element ko) for js and css for le identify the id of the input-->
+</div> 
+
+<footer><p>Copyright &copy; 2021All rights reserved</p>
+</footer>
+
+</body>
+</html>
