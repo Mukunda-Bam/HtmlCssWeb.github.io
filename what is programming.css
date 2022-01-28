@@ -1,0 +1,82 @@
+body{
+    margin:0px;
+    background-color:#f1f1f1;
+}
+
+
+header{
+    background-color: green;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-family:"Comic Sans Ms", Aerial;
+}
+nav{           /* For box*/
+    overflow: hidden;
+    background-color:#333;
+    
+}
+nav a{  /*for text*/
+                           
+    float: left;
+    color: #fff;
+    padding: 14px 13px 12px 11px;
+    text-decoration:none;
+}
+nav a:hover{
+    background-color:black;
+    color:red;
+}
+.column{                       /*float vaneko kei new kura add garyo vane like image tyo new kura left aayera basxa
+                                 yedi tyo hatyo vane pani pahila ko kura left ma nai aauxa*/
+    float:left;             /*padding and width affect eachother*/
+    padding:15px;          
+}
+.column.first{
+    width:20%;
+}
+.second{
+    width:50%;
+}
+.third{
+    width:20%;
+}
+
+footer{
+    clear: both;
+    text-align:center;
+}
+div.gallery{    
+    margin: 3px;
+    border: 5px solid black;
+    float: left; /*float le html ma vertical/column ma appear hune img/text lai top-left ma lyauxa*/
+}
+div.gallery:hover{
+    border:5px solid red;
+
+}
+div.descrp{
+    text-align:center;
+    color:blue;
+}
+input[type=text], select, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    margin-bottom:16px;
+    resize:vertical;
+    border:2px solid palevioletred;
+    cursor:pointer;     
+}
+input[type=submit]{
+    cursor:cell;
+    border:2px solid red;
+}
+@media screen and (max-width: 917px){
+    .column.first, .column.second, .column.third{
+        width:100%;      
+    }
+    p{
+        text-align:justify;  
+    }
+}
